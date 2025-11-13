@@ -1,0 +1,342 @@
+/* -------------------- GERAL -------------------- */
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #2E2F5B;
+  background: linear-gradient(180deg, #EAF1FA 0%, #E6E9FA 50%, #F1EAFB 100%);
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  margin-top: 0;
+  font-size: 4.7rem;
+}
+
+h4{
+  font-size: 1.5rem;
+  font-family: 'Playfair', serif;
+}
+
+p, a, li{
+  font-size: 1.5rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header, .hero, .primeiro, .segundo, .testemunhos, .nós, .Workshops {
+  width: 95%;
+  margin-left: 2.5%;
+}
+
+.footer{
+  width: 100%;
+}
+
+
+/* -------------------- HEADER -------------------- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 20px 30px 20px 30px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img{
+  width: 70px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+}
+
+nav a {
+  color: #2E2F5B;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #6B5CC4;
+}
+
+
+/* -------------------- HERO -------------------- */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 140px 30px 80px;
+  min-height: 80vh;
+  background-color: #d3f4f3;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero h1 {
+  color: #2E2F5B;
+}
+
+.hero p {
+  color: #697194;
+  margin-bottom: 20px;
+}
+
+.hero-img {
+  width: 35%;
+}
+
+.hero img{
+  width: 70%;
+  padding-left: 5%;
+}
+
+.btn {
+  display: inline-block;
+  background: #6B5CC4;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #5B4DC3;
+}
+
+
+/* -------------------- SOBRE -------------------- */
+
+.primeiro{
+  background-color: #f3f6fb;
+}
+
+.sobre {
+  display: flex;
+  margin-left: 30px;
+}
+
+.primeiro h2 {
+  color: #2E2F5B;
+  margin-bottom: 20px;
+  margin: 0px 30px;
+  padding-top: 10px;
+  padding-bottom: 60px;
+}
+
+
+.sobre img{
+  width: 95%;
+  padding-left: 40%;
+}
+
+.info ul {
+  padding-left: 20px;
+  color: #2E2F5B;
+}
+
+.sobre .info .detalhes p {
+  margin: 5px 0;
+  color: #697194;
+}
+
+.detalhes .info{
+  margin-bottom: 50px;
+}
+
+.info{
+  margin-left: 30px;
+  width: 50%;
+  padding-top: 30px;
+}
+
+.info li{
+  margin-bottom: 30px;
+}
+
+/* -------------------- FORMULÁRIO -------------------- */
+
+.segundo{
+  display: flex;
+  background-color: #f3f6fb;
+  padding-top: 100px;
+}
+
+.formulario {
+  padding: 30px 5%;
+  background-color: #e9e7f4;
+  margin-left: 8%;
+  width: 36%;
+}
+
+.formulario form {
+  max-width: 600px;
+  background: rgba(255, 255, 255, 1);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+#mensagem-sucesso {
+  margin-top: 10px;
+  color: #268a7c;
+  font-weight: 600;
+}
+
+.oculto {
+  display: none;
+}
+
+
+/* -------------------- TESTEMUNHOS -------------------- */
+.testemunhos {
+  padding: 80px 5%;
+  text-align: center;
+  background-color: #f3f6fb;
+}
+.testemunhos h2 {
+  margin-bottom: 40px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.card {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  width: 280px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+.card p {
+  font-style: italic;
+  color: #2E2F5B;
+}
+.card h4 {
+  margin-bottom: 5px;
+  color: #6B5CC4;
+}
+.card .cargo {
+  color: #697194;
+  font-size: 0.9rem;
+}
+
+.testemunhos img{
+  width: 80%;
+  border-radius: 100%;
+  height: 35%;
+}
+
+/* -------------------- SOBRE NÓS -------------------- */
+
+.nós {
+  display: flex;
+  background-color: #f3f6fb;
+}
+
+.sobre-nos {
+  padding: 80px 5%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sobre-nos h2 {
+  margin-bottom: 20px;
+}
+
+.sobre-nos p {
+  color: #2E2F5B;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.nós img {
+  margin-left: 30px;
+  padding-top: 80px;
+  height:70%;
+  width: 35%;
+}
+
+
+/* -------------------- Mais Workshops -------------------- */
+
+.Workshops {
+  background-color: #f3f6fb;
+  padding: 30px;
+}
+
+.Workshops a{
+  font-family: 'Playfair Display', serif;
+  color: #2E2F5B;
+}
+
+.Workshops a :hover{
+  color: #6B5CC4
+}
+
+
+
+/* -------------------- FOOTER -------------------- */
+
+.footer {
+  text-align: center;
+  padding: 15px 0;
+  color: #697194;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
